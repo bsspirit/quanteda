@@ -16,7 +16,6 @@ Quanteda从底层开始重新设计了文本处理过程，在语法与性能上
 
 # 具体内容
 
-![image](https://user-images.githubusercontent.com/170283/142710483-06626d6a-c903-4c4b-8219-6a3905da46dd.png)
 
 ![image](https://user-images.githubusercontent.com/170283/142710408-9e044bf1-219f-4006-8fd1-b0b5d5905478.png)
 
