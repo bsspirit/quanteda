@@ -4,6 +4,20 @@
 
 量化文本分析（Quantitative Analysis of Textual Data），一种新的方式，用结构化数据的方式来管理文本。quanteda包，提出以语料库的形式管理文本，语料库被定义为文本的集合，其中包括特定每个文本的文档级变量，和整个集合的元数据。用户可以轻松地按单词、段落、句子甚至用户提供的分隔符分割文本和标签，按文档级变量将它们分组为更大的文档，形成基于逻辑条件的变量组合。
 
+## Quanteda介绍
+
+Quanteda是一个用于管理和分析文本数据的 R包。https://quanteda.io/
+
+Quanteda从底层开始重新设计了文本处理过程，在语法与性能上得到了巨大提升。
+
++ 内部使用stringi作为字符处理工具  
++ 内部基于data.table与Matrix包
++ 统一的语法结构
+
+# 具体内容
+
+![image](https://user-images.githubusercontent.com/170283/142710483-06626d6a-c903-4c4b-8219-6a3905da46dd.png)
+
 ![image](https://user-images.githubusercontent.com/170283/142710408-9e044bf1-219f-4006-8fd1-b0b5d5905478.png)
 
 
