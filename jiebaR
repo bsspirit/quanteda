@@ -1,0 +1,39 @@
+# R语言中文分词包jiebaR
+# http://blog.fens.me/r-word-jiebar/
+
+# 安装
+#install.packages("jiebaR)
+
+# 加载
+library(jiebaR)
+library(jiebaRD)
+library(stringr)
+setwd("C:/work/R/text")
+
+wk = worker()
+
+# 分词
+wk["我是R语言的深度用户"]
+wk<='另一种符合的语法'
+seg<-segment( "segment()函数语句的写法" , wk )
+seg
+freq(seg)
+
+file1<-wk['./job/1.txt'];file1
+segment1<-readLines(file1,encoding="UTF-8");segment1
+
+# 词典
+show_dictpath()
+dir(show_dictpath())
+
+# 停止词
+file2<-str_c(show_dictpath(),"/stop_words.utf8")
+readLines(file2,encoding="UTF-8",n=200)
+
+wk2 <-worker(stop_word='stop_word.txt')
+wk2["我是《R的极客理想》图书作者"]
+
+# 词典：TF-IDF = TF(词频) * 逆文档频率(IDF)
+file3<-str_c(show_dictpath(),"/idf.utf8")
+readLines(file3,encoding="UTF-8",n=50)
+
